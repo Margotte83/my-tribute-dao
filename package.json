@@ -26,7 +26,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "npm ci && npm run compile",
+    "build": "tribute-contracts build --output public",
     "clean": "rimraf build/",
     "compile": "hardhat compile && scripts/prepack.sh",
     "coverage": "TEST=true ts-node tasks/coverage.ts",
