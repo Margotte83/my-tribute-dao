@@ -92,7 +92,7 @@
     "style": "prettier --check 'src/**/*.{js,jsx,ts,tsx,css,scss}'",
     "test": "npm run compile && react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "npm run predeploy && gh-pages -d build"
+    "deploy": "gh-pages -d build"
 
   },
   "eslintConfig": {
