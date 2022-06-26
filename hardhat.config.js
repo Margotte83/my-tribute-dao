@@ -89,14 +89,14 @@ module.exports = {
     //   signerId: process.env.SIGNER || undefined,
     // },
     polygontest: {
-      url: ETH_NODE_URL,
+      url: process.env.ETH_NODE_URL,
       network_id: 80001,
       chainId: 80001,
       skipDryRun: true,
       gas: 2100000,
       gasPrice: 10000000000,
       accounts: {
-        mnemonic: WALLET_MNEMONIC || "",
+        mnemonic: process.env.WALLET_MNEMONIC || "",
         count: 10,
       },
       signerId: process.env.SIGNER || undefined,
